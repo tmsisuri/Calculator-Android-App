@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     private double secondValue;
     private TextView inputDisplay, outputDisplay;
     private DecimalFormat decimalFormat;
-    private MaterialButton button0, button1, button2, button3, button4, button5, button6, button7, button8, button9,
-            buttonDot, buttonAdd, buttonSub, buttonMultiply, buttonDivide, buttonPercent, buttonClear, buttonOFF, buttonEqual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,26 +34,26 @@ public class MainActivity extends AppCompatActivity {
         inputDisplay = findViewById(R.id.input);
         outputDisplay = findViewById(R.id.output);
 
-        button0 = findViewById(R.id.button0);
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button4 = findViewById(R.id.button4);
-        button5 = findViewById(R.id.button5);
-        button6 = findViewById(R.id.button6);
-        button7 = findViewById(R.id.button7);
-        button8 = findViewById(R.id.button8);
-        button9 = findViewById(R.id.button9);
+        MaterialButton button0 = findViewById(R.id.button0);
+        MaterialButton button1 = findViewById(R.id.button1);
+        MaterialButton button2 = findViewById(R.id.button2);
+        MaterialButton button3 = findViewById(R.id.button3);
+        MaterialButton button4 = findViewById(R.id.button4);
+        MaterialButton button5 = findViewById(R.id.button5);
+        MaterialButton button6 = findViewById(R.id.button6);
+        MaterialButton button7 = findViewById(R.id.button7);
+        MaterialButton button8 = findViewById(R.id.button8);
+        MaterialButton button9 = findViewById(R.id.button9);
 
-        buttonAdd = findViewById(R.id.add);
-        buttonSub = findViewById(R.id.subtract);
-        buttonDivide = findViewById(R.id.division);
-        buttonDot = findViewById(R.id.buttonPoint);
-        buttonMultiply = findViewById(R.id.multiply);
-        buttonClear = findViewById(R.id.clear);
-        buttonOFF = findViewById(R.id.off);
-        buttonEqual = findViewById(R.id.equal);
-        buttonPercent = findViewById(R.id.percent);
+        MaterialButton buttonAdd = findViewById(R.id.add);
+        MaterialButton buttonSub = findViewById(R.id.subtract);
+        MaterialButton buttonDivide = findViewById(R.id.division);
+        MaterialButton buttonDot = findViewById(R.id.buttonPoint);
+        MaterialButton buttonMultiply = findViewById(R.id.multiply);
+        MaterialButton buttonClear = findViewById(R.id.clear);
+        MaterialButton buttonOFF = findViewById(R.id.off);
+        MaterialButton buttonEqual = findViewById(R.id.equal);
+        MaterialButton buttonPercent = findViewById(R.id.percent);
 
 
 
@@ -234,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             try {
                 firstValue = Double.parseDouble(inputDisplay.getText().toString());
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
         }
     }
